@@ -1,0 +1,12 @@
+<form [formGroup]="loginFormGroup" class="d-grid gap-2 col-6 mx-auto" (ngSubmit)="onSubmit()">
+    <h2 class="text-center">Login</h2>
+    <div class="mb-3">
+        <label for="username" class="form-label">username</label>
+        <input type="text" class="form-control" formControlName="username" placeholder="Enter your username" />
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">password</label>
+        <input type="password" class="form-control" formControlName="password" placeholder="Enter your passdword" />
+    </div>
+    <button type="submit" class="btn btn-primary">login</button>
+</form>

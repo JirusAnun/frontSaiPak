@@ -1,0 +1,48 @@
+<app-header></app-header>
+<h5>Your Point: {{score}}</h5>
+<div class="d-flex flex-row">
+    <div class="card" style="width: 400px;">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/006/662/128/small/quick-tips-speech-bubble-with-bulb-icon-interesting-facts-concept-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-free-vector.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Buy Hint</h5>
+        <h6 class="card-title">Price: {{hintPrice}}</h6>
+        <a class="btn btn-primary" (click)="buyHint()">Purchase</a>
+        <p id="error"></p>
+      </div>
+    </div>
+    <div class="card" style="width: 400px;" *ngIf="hint1Status">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8QJmJQLtIDr4XBcAP_mb4qNmjjECz3nkNRu0l5ssp&s" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hint 1</h5>
+        <p class="card-text">{{hint1}}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 400px;" *ngIf="hint2Status">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8QJmJQLtIDr4XBcAP_mb4qNmjjECz3nkNRu0l5ssp&s" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hint 2</h5>
+        <p class="card-text">{{hint2}}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 400px;" *ngIf="hint3Status">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8QJmJQLtIDr4XBcAP_mb4qNmjjECz3nkNRu0l5ssp&s" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hint 3</h5>
+        <p class="card-text">{{hint3}}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 400px;" *ngIf="hint4Status">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8QJmJQLtIDr4XBcAP_mb4qNmjjECz3nkNRu0l5ssp&s" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hint 4</h5>
+        <p class="card-text">{{hint4}}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 400px;" *ngIf="hint5Status">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8QJmJQLtIDr4XBcAP_mb4qNmjjECz3nkNRu0l5ssp&s" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hint 5</h5>
+        <p class="card-text">{{hint5}}</p>
+      </div>
+    </div>
+</div>

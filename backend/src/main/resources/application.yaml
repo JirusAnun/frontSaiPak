@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/CO-Saipak
+    username: postgres
+    password: syspass
+---
+app:
+  token:
+    secret: m#MySecretEGCO33+34
+    issuer: BackendService
